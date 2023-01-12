@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Student Enrollment Form</h1>
+       <div class="container_left">
+        <div class="form">
+            <h2>Enrollment Form</h2>
+            <form>
+                <div class="name">
+                    <label>Name:</label>
+                    <input type="text" id="name"  placeholder="Enter your name" required>
+                </div>
+                <div class="gender">
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="male-female" value="Male" class="gender">Male
+                    <input type="radio" id="female" name="male-female" value="Female" class="gender">Female
+                </div>
+                <div class="email">
+                    <label>Email:</label>
+                    <input type="email" id="email"  placeholder="xyz@example.com" required>
+                </div>
+                <div class="Website">
+                    <label>Website:</label>
+                    <input type="text" id="Website"  placeholder="Enter your website" >
+                </div>
+                <div class="image">
+                    <label for="url">Image:</label>
+                    <input type="url" id="url"  placeholder="Paste img url" required>
+                </div>
+                <div class="skills">
+                    <label>Skills:</label>
+                    <input type="checkbox" id="Java"  value="Java" class="checkbox">Java
+                    <input type="checkbox" id="HTML"  value="HTML" class="checkbox">HTML
+                    <input type="checkbox" id="CSS"  value="CSS" class="checkbox">CSS
+                </div>
+                <div class="button">
+                    <button type="Submit" id="Submit">Submit</button>
+                    <button type="reset" id="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="container_right">
+            <h2>Enrolled Students</h2>
+            <div class="cardContainer" id="cardContainer"></div>
+        </div>
+       </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
